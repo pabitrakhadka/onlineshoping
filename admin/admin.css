@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard_top {
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.dashboard_left {
+    padding-top: 40px;
+    width: 18%;
+    background-color: rgb(48, 43, 43);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard_right {
+
+    width: 82%;
+    padding: 1rem;
+
+}
+
+.dashboard_left .dashboard_ullist {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.dashboard_left .dashboard_ullist li {
+    border-bottom: 1px solid gray;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+
+
+}
+
+.dashboard_left .dashboard_ullist a {
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+.dashboard_left .dashboard_ullist a:hover {
+    background-color: red;
+
+}
+
+/* alert message */
+.alert_box {
+    position: absolute;
+    right: 0;
+    width: 10rem;
+    padding: 0.5rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.inner_admindiv {
+    width: 15rem;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5)0px 5px 15px;
+    border-radius: 1rem;
+}
+
+.background_colo {
+    background: linear-gradient(rgba(37, 44, 102, 0.849), rgb(10, 9, 58));
+    width: 100%;
+    height: 100vh;
+}
+
+.outter_logindiv {
+
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inner_admindiv form {
+    padding: 1rem;
+}
+
+.inner_admindiv h2 {
+    text-align: center;
+}
+
+.inner_admindiv form .input {
+    margin: 1rem 0rem;
+}
+
+.inner_admindiv form .input input {
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+
+.inner_admindiv form .center_div {
+    display: flex;
+    justify-content: center;
+}
+
+.inner_admindiv form button {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.button_addblog {
+    margin-top: 1rem;
+}
+
+.shows_products .image {
+    width: 5rem;
+}
+
+.shows_products .image img {
+    width: 100%;
+}
+.button_addblog a{
+background-color: rgb(46, 44, 44);
+color: white;
+padding: 0.5rem 1rem;
+text-decoration: none
+;
+border-radius: 1rem;
+}
+.addproducts_pages .center_div{
+    width: 10rem;
+    margin: auto;
+}
+.addproducts_pages .center_div button{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard .dashboard_left {
+        width: 100%;
+        display: block;
+        height: 4rem;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .dashboard .dashboard_ullist {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .dashboard .dashboard_ullist li {
+        padding: 0;
+        list-style: none;
+        border: none;
+
+
+    }
+
+    .dashboard .dashboard_ullist li a {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .dashboard .dashboard_right {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .inner_admindiv {
+        width: 15rem;
+        margin: auto;
+        background-color: white;
+    }
+
+    .outter_logindiv {
+        background: linear-gradient(rgba(7, 211, 7, 0.849), #d5df);
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+    }
+
+}
